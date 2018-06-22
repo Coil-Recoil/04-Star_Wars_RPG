@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Should I Stay or Should I Go?</title>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Erica+One|Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <span>PROJECT ONE</span>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default panel-transparent col-lg-12">
+
+                    <div class="panel">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <form id="year-form">
+                                    <label for="year-input">Search Zip Code:</label>
+                                    <input class="zipbox" type="text" id="year-input">
+                                    <input id="addyear" type="submit" class="btn btn-lg" value="Submit">
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default panel-transparent panel-responsive">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Weather Today</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>10am</th>
+                                            <th>12pm</th>
+                                            <th>2pm</th>
+                                            <th>4pm</th>
+                                            <th>6pm</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="trainresults">
+                                        <tr>
+                                            <td></td>
+                                            <td id="destination"></td>
+                                            <td id="frequency"></td>
+                                            <td id="next"></td>
+                                            <td id="away"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default panel-transparent col-lg-12">
+            <div class="panel-heading">
+                <h3 class="panel-title">Events Nearby</h3>
+
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table events">
+                        <thead>
+                            <tr>
+                                <th>Event Name</th>
+                                <th>Location</th>
+                                <th>Start Time</th>
+                                <th>End Time</th>
+                                <th>Admission</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trainresults">
+                            <tr>
+                                <td></td>
+                                <td id="destination"></td>
+                                <td id="frequency"></td>
+                                <td id="next"></td>
+                                <td id="away"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
+</body>
+
+</html>

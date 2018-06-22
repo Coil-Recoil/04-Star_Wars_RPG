@@ -1,0 +1,108 @@
+.container {
+    background: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border: solid black 0px;  
+    border-radius: 10px;
+}
+
+.jumbotron {
+    font-family: 'Shrikhand', cursive;
+    font-family: 'Erica One', cursive;
+    font-size: 55px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px auto;
+    color: white;   
+    border: solid white 2px; 
+    padding: 10px 0px;
+    letter-spacing: 4px;
+    text-shadow: rgba(0, 0, 0, 0.6) 6px 6px 6px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    background-color: black;
+    background: url("../images/download-free-studio-ghibli-wallpapers-miyazaki-anime-43-576146985e007.jpg");
+   background-size: stretch;
+   background-repeat: no-repeat;
+   margin: auto;
+   color: white;
+  
+}
+
+.panel {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.panel-title {
+text-align: center;
+font-family: 'Luckiest Guy';
+font-size: 27px;
+text-shadow: black 4px 4px 4px;
+}
+
+.btn { 
+  color: #ffffff; 
+  background-color: rgb(255, 155, 0, 0.9); 
+  border-color: #FFFFFF; 
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+  font-family: 'Shrikhand';
+  text-shadow: black 1.5px 1.5px 1.5px;
+  vertical-align: 5px;
+}
+
+.btn:hover {
+    text-shadow:  white 1.7px 1.7px 1.7px;
+}
+
+.panel-transparent {
+    background: none;
+    border: none;
+}
+
+.panel-transparent .panel-heading{
+    background:  rgb(255, 155, 0, 0.9);
+    color:white;
+    border: solid white 2px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.panel-transparent .panel-body{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 0px 10px 10px;
+    border: solid white 2px; 
+}
+
+.jumbotron img{
+    max-width:65%;
+    max-height:50%;
+}
+
+.events {
+    height: 900px;
+}
+
+.zipbox {
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: 5px;
+    width: 50%;
+}
+
+label {
+    padding: 10px 10px 0px 0px;
+    text-align: center;
+font-family: 'Luckiest Guy';
+font-size: 27px;
+letter-spacing: 2px;
+}
