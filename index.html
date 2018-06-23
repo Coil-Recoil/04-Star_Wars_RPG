@@ -16,60 +16,45 @@
     <div class="container">
         <div class="jumbotron">
             <span>PROJECT ONE</span>
-
         </div>
-
         <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default panel-transparent col-lg-12">
-
-                    <div class="panel">
-                        <div class="container">
-                            <div class="col-md-12">
-                                <form id="year-form">
-                                    <label for="year-input">Search Zip Code:</label>
-                                    <input class="zipbox" type="text" id="year-input">
-                                    <input id="addyear" type="submit" class="btn btn-lg" value="Submit">
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
+            <div class="panel panel-default panel-transparent col-lg-12">
+                <div class="panel">
+                    <form id="year-form">
+                        <label for="zip-input">Search Zip Code:</label>
+                        <input class="zipbox" type="text" id="zip-input">
+                        <input id="zipCode" type="submit" class="btn btn-lg" value="Submit">
+                    </form>
                 </div>
 
-                <div class="col-lg-12">
-                    <div class="panel panel-default panel-transparent panel-responsive">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Weather Today</h3>
-                        </div>
-                        <div class="panel-body">
-
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>10am</th>
-                                            <th>12pm</th>
-                                            <th>2pm</th>
-                                            <th>4pm</th>
-                                            <th>6pm</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="trainresults">
-                                        <tr>
-                                            <td></td>
-                                            <td id="destination"></td>
-                                            <td id="frequency"></td>
-                                            <td id="next"></td>
-                                            <td id="away"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
+                <div class="panel panel-default panel-transparent panel-responsive col-lg-12">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Weather Today</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>10am</th>
+                                        <th>12pm</th>
+                                        <th>2pm</th>
+                                        <th>4pm</th>
+                                        <th>6pm</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="hourlyForecast">
+                                    <tr>
+                                        <td id="10AM"></td>
+                                        <td id="12PM"></td>
+                                        <td id="2PM"></td>
+                                        <td id="4PM"></td>
+                                        <td id="6PM"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -90,13 +75,13 @@
                                 <th>Admission</th>
                             </tr>
                         </thead>
-                        <tbody id="trainresults">
+                        <tbody id="eventResults">
                             <tr>
-                                <td></td>
-                                <td id="destination"></td>
-                                <td id="frequency"></td>
-                                <td id="next"></td>
-                                <td id="away"></td>
+                                <td id="name"></td>
+                                <td id="venue"></td>
+                                <td id="start"></td>
+                                <td id="end"></td>
+                                <td id="price"></td>
                             </tr>
                         </tbody>
                     </table>
