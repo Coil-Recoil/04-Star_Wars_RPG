@@ -31,8 +31,17 @@ $(document).ready(function () {
                 var event = results[i].name.text;
                 var eventLink= results[i].url;
                 console.log(eventLink);
-                var cell= $("<tr><td>" + "<a href='" + eventLink + "'>" + event + "</a>" + "<span class='start-side'>" + " - 10:00am" + "</span>" + "</td></tr>");
+
+                //Displaying Event Name / URL
+
+                var cell= $("<tr><td>" + "<a href='" + eventLink + "'>" + event + "</a></td></tr>");
                 $("#eventResults").append(cell);
+
+                //Displaying Start Time
+
+                var start= $("<tr><td>" + "<a style='color: white'>" + "10:00am" + "</a></td></tr>");
+                $("#start-time").append(start);
+                
             }
         });
     }

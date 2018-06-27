@@ -136,3 +136,13 @@ td {
     text-align: right;
 
 }
+
+a:link {
+    color: white;
+    }
+    a:visited {
+    color: gray;
+    }
+    a:hover {
+    color: rgb(255, 155, 0, 0.9);
+    }
