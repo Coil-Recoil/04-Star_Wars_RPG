@@ -36,8 +36,8 @@ $(document).ready(function () {
                 console.log(eventLink);
 
                 $("#eventResults").append(
-                    "<tr><td id='events'>" + eventName +
-                    "</td><td id='events'>" + start +
+                    "<tr><td id='addRow'>" + eventName +
+                    "</td><td id='addRow'>" + start +
                     "</td></tr>");
 
                 //var cell= $("<tr><td>" + "<a href='" + eventLink + "'>" + event + "</a></td></tr>");
@@ -82,15 +82,13 @@ $("#zipCode").on("click", weatherInfo);
        // var weather\
 
        $("#weatherTime").append(
-       "<th>" + displayTime +
+       "<th  id='addRow'>" + displayTime +
          "</th>"
         )
        
        $("#hourlyForecast").append(
          "<td>" + displayTemp +
          //"<tr><td>" + displayWeather +
-         // "</td><td>" + nextArrivalTime +
-         // "</td><td>" + minsArrival +
          "</td>")
      }
    });
