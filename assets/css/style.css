@@ -1,4 +1,4 @@
-container {
+.container {
     background: rgba(0, 0, 0, 0);
     background-repeat: repeat-y;
     background-size: cover;
@@ -81,6 +81,7 @@ text-shadow: black 4px 4px 4px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 0px 0px 10px 10px;
     border: solid white 2px; 
+    min-height: 100px;
 }
 
 .jumbotron img{
@@ -105,8 +106,7 @@ letter-spacing: 2px;
 }
 
 .events {
-    padding-bottom: 3px;
-    border-bottom: solid 1px #ddd;
+    
     text-align: center;
 }
 
@@ -116,16 +116,10 @@ letter-spacing: 2px;
 
 
 .start-column {
-    margin-right: 0px;
-    padding-bottom: 3px;
-    border-bottom: solid 1px #ddd;
-    /*border-left: solid 1px #ddd;*/
-    text-align: right;
-    width: 100%;
      
 }
 
-td {
+#events {
     border-bottom: 1px solid #ddd;
     border-spacing: 2px;
     border-collapse: collapse;
