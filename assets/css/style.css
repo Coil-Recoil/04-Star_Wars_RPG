@@ -1,6 +1,6 @@
-.container {
+container {
     background: rgba(0, 0, 0, 0);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     margin: auto;
     min-width: 90%;
@@ -26,12 +26,12 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
     background-color: black;
     background: url("../images/download-free-studio-ghibli-wallpapers-miyazaki-anime-43-576146985e007.jpg");
    background-size: stretch;
-   background-repeat: no-repeat;
+   background-repeat: repeat-y;
    color: white;
 }
 
@@ -88,21 +88,51 @@ text-shadow: black 4px 4px 4px;
     max-height:50%;
 }
 
-.events {
-    height: 900px;
-}
-
 .zipbox {
     border-radius: 5px;
     text-align: center;
     vertical-align: 5px;
     width: 50%;
+    color: black;
 }
 
 label {
 padding: 10px 10px 0px 0px;
 text-align: center;
-font-family: 'Luckiest Guy';
-font-size: 27px;
+font-family: 'Arial', sans-serif;
+    font-size: 30px;
 letter-spacing: 2px;
+}
+
+.events {
+    padding-bottom: 3px;
+    border-bottom: solid 1px #ddd;
+    text-align: center;
+}
+
+
+.event-column {
+}
+
+
+.start-column {
+    margin-right: 0px;
+    padding-bottom: 3px;
+    border-bottom: solid 1px #ddd;
+    /*border-left: solid 1px #ddd;*/
+    text-align: right;
+    width: 100%;
+     
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    border-spacing: 2px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.start-side {
+    text-align: right;
+
 }
