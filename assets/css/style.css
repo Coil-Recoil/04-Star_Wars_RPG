@@ -128,3 +128,8 @@ a:link {
     a:hover {
     color: rgb(255, 155, 0, 0.9);
     }
+
+    #icons {
+        width: 82px;
+        height: 82px;
+    }
