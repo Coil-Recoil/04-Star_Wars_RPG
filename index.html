@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather or Not to Go</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -10,9 +11,58 @@
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<div class="panel">
+    <h2>Modal Example</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content--><div class="panel">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Wireframe</h4>
+          </div>
+          <div class="modal-body">
+            
 
+    <div class="body" id="white"><h5>header</h5></div>
+
+    <div id="white"><nav><h5>nav</h5></nav></div>
+
+    <div class="split">
+
+        <div class="section"><section><h5>section</h5>
+
+            <div class="article"><article><h5>article</h5>
+
+                <div class="subheaders" id="white"><h1>h1, h2, h3</h1></div>
+
+                <div class="paragraph" id="white"><p>p</p></div>
+
+            </article></div></section></div>
+
+            <div class="aside" id="white"><aside><h5>aside</h5></aside></div>
+
+        </div>
+
+        <div id="white"><footer><h5>footer</h5></footer></div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div></div>
 <body>
-    <div class="container">
+    <div class="panel">
         <div class="jumbotron">
             <span>Weather or Not to Go</span>
         </div>
@@ -84,8 +134,17 @@
 
         </div>
         <div class="panel panel-default panel-transparent col-lg-12">
-            <div class="panel-body">
-                <img src="assets/images/ArtImgozwPVl_n-min.png" alt="google maps">
+            <div class="container" >
+               <p data-toggle="popover"><p  id="popup"></p></p>
+               <div class="media">
+                <div class="media-left">
+                  <img src="img_avatar1.png" class="media-object" style="width:60px">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"></h4>
+                  
+                </div>
+              </div>
             </div>
         </div>
     </div>

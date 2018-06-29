@@ -129,7 +129,65 @@ a:link {
     color: rgb(255, 155, 0, 0.9);
     }
 
-    #icons {
+    .icons {
         width: 82px;
         height: 82px;
     }
+
+/* Adding Wireframe */
+
+    div {
+        margin: 10px 0px;
+        padding: 5px;
+        }
+        
+        h1, p, #white {
+        color: #777;
+        background-color: #ebebeb;
+        }
+        
+        .body {
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        color: #777;
+        background-color: black;
+        max-width: 100%;
+        font-size: 18px;
+        margin: auto;
+        text-align: center;
+        }
+        
+        .split {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        }
+        
+        .section {
+        background-color: #ebebeb;
+        width: 47%;
+        margin-right: 2%;
+        padding: 0px 1%;
+        } 
+        
+        .aside {
+        width: 48%;
+        }
+        
+        .article {
+        color: #ebebeb;
+        background-color: #777;
+        padding-bottom: 5px;
+        }
+        
+        .subheaders {
+        margin: 30px 15px 15px;
+        }
+        
+        .paragraph {
+        margin: 5px 15px 15px;
+        }
+        
+        .modal-content {
+            background-color: rgba(0, 0, 0, 0);
+        }

@@ -5,6 +5,9 @@ $(document).ready(function () {
     // Take Zip and Send to APIs
 
     $("#zipCode").on("click", eventInfo);
+/*1. add bootstrap class ".hide" to appended image and put ".show" in html to reveal on click
+2. or - try adding document.InnerHTML.text = "" before it loads new content to clear current content
+*/
 
     // Call API 
 
@@ -76,7 +79,7 @@ $(document).ready(function () {
                     var displayTemp = parseInt((pullTemp - 273.15) * 1.8) + 32;
                     //var displayWeather = weatherData[i].weather[0].description;
                     var pullIcon = weatherData[i].weather[0].icon;
-                    var displayIcon = "<img src='http://openweathermap.org/img/w/" + pullIcon + ".png' id='icons'>";
+                    var displayIcon = "<img src='http://openweathermap.org/img/w/" + pullIcon + ".png' class='media-object icons'>";
 
                     $("#weatherTime").append(
                         "<th id='addRow'>" + displayTime +
