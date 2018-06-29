@@ -16,7 +16,11 @@ $(document).ready(function () {
 
         location = $("#zip-input").val().trim();
         var queryURL = "https://www.eventbriteapi.com/v3/events/search/?location.address=" + location + "&start_date.keyword=today&token=YMCHN5J2AOTS2WEM2FF2";
-
+       
+        document.getElementById("weatherTime").innerHTML = "";
+        document.getElementById("hourlyForecast").innerHTML = "";
+        document.getElementById("weatherIcons").innerHTML = "<tr id='hourlyForecast'></tr>";
+        document.getElementById("eventResults").innerHTML = "<tr ></tr>";
 
         $.ajax({
             url: queryURL,
@@ -79,7 +83,7 @@ $(document).ready(function () {
                     var displayTemp = parseInt((pullTemp - 273.15) * 1.8) + 32;
                     //var displayWeather = weatherData[i].weather[0].description;
                     var pullIcon = weatherData[i].weather[0].icon;
-                    var displayIcon = "<img src='http://openweathermap.org/img/w/" + pullIcon + ".png' class='media-object icons'>";
+                    var displayIcon = "<img src='http://openweathermap.org/img/w/" + pullIcon + ".png' class='icons'>";
 
                     $("#weatherTime").append(
                         "<th id='addRow'>" + displayTime +
@@ -87,13 +91,55 @@ $(document).ready(function () {
                     )
 
                     $("#weatherIcons").append(
-                        "<td>" + displayIcon +
+                        "<td class='col-sm-2 class='media-object icons'>" + displayIcon +
                         "</td>"
                     )
 
                     $("#hourlyForecast").append(
-                        "<td>" + displayTemp +
+                        "<td class='col-sm-2'>" + displayTemp +
                         "</td>")
+
+                        // Tring to use bootstrap "media-objects" for icons...
+                        
+                        /*     var displayIcon = "<a class='media'>"   + "<img src='http://openweathermap.org/img/w/" + pullIcon + ".png' class='icons'></a>";
+
+                    $("#weatherTime").append(
+                        "<th id='addRow'>" + displayTime +
+                        "</th>"
+                    )
+
+                    $("#weatherIcons").append(
+                        "<td class='col-sm-2 media-object'>" + displayIcon + "<a class='media-body'>" + displayTemp + "</a></td>"
+                    )
+                    
+                       
+                    2nd try:
+
+                      $("#weatherIcons").append(
+                       "<div class='media'>" + "<td class='col-sm-2 media-object icons'>" + displayIcon +
+                        "</td>" + "<td class='col-sm-2 media-body'>" + displayTemp +
+                        "</td>" + "</div>"
+                    )
+
+                      3rd try (pretty close): 
+
+                $("#weatherTime").append(
+                        "<th class='col-sm-2 media-center' id='addRow'>" + displayTime +
+                        "</th>"
+                    )
+
+
+                    $("#weatherIcons").append(
+                        "<td class='col-sm-2 media-object icons media-center'>" + displayIcon +
+                        "</td>"
+                    )
+
+                    $("#weatherIcons").append(
+                        "<td class='col-sm-2 media-body media-center'>" + displayTemp +
+                        "</td>")
+                    
+                    */
+
                 }
             });
     }

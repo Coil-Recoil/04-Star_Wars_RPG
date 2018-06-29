@@ -11,59 +11,87 @@
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<div class="panel">
+<div class="panel visible-sm-*">
     <h2>Modal Example</h2>
     <!-- Trigger the modal with a button -->
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-  
+
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog modal-lg">
-      
-        <!-- Modal content--><div class="panel">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Wireframe</h4>
-          </div>
-          <div class="modal-body">
-            
+        <div class="modal-dialog modal-lg">
 
-    <div class="body" id="white"><h5>header</h5></div>
+            <!-- Modal content-->
+            <div class="panel">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Wireframe</h4>
+                    </div>
+                    <div class="modal-body">
 
-    <div id="white"><nav><h5>nav</h5></nav></div>
 
-    <div class="split">
+                        <div class="body" id="white">
+                            <h5>header</h5>
+                        </div>
 
-        <div class="section"><section><h5>section</h5>
+                        <div id="white">
+                            <nav>
+                                <h5>nav</h5>
+                            </nav>
+                        </div>
 
-            <div class="article"><article><h5>article</h5>
+                        <div class="split">
 
-                <div class="subheaders" id="white"><h1>h1, h2, h3</h1></div>
+                            <div class="section">
+                                <section>
+                                    <h5>section</h5>
 
-                <div class="paragraph" id="white"><p>p</p></div>
+                                    <div class="article">
+                                        <article>
+                                            <h5>article</h5>
 
-            </article></div></section></div>
+                                            <div class="subheaders" id="white">
+                                                <h1>h1, h2, h3</h1>
+                                            </div>
 
-            <div class="aside" id="white"><aside><h5>aside</h5></aside></div>
+                                            <div class="paragraph" id="white">
+                                                <p>p</p>
+                                            </div>
 
+                                        </article>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="aside" id="white">
+                                <aside>
+                                    <h5>aside</h5>
+                                </aside>
+                            </div>
+
+                        </div>
+
+                        <div id="white">
+                            <footer>
+                                <h5>footer</h5>
+                            </footer>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div id="white"><footer><h5>footer</h5></footer></div>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-        
-      </div>
     </div>
-    
-  </div></div>
-<body>
+</div>
+
+<body class="panel-group">
     <div class="panel">
-        <div class="jumbotron">
+        <div class="jumbotron visible-xs">
             <span>Weather or Not to Go</span>
         </div>
         <div class="row">
@@ -72,7 +100,8 @@
                     <form id="year-form">
                         <label for="zip-input">Search Zip Code:</label>
                         <input class="zipbox" placeholder="Enter Zip" type="number" id="zip-input">
-                        <input id="zipCode" type="submit" class="btn btn-lg" value="Submit">
+                        <input id="zipCode" type="submit" class="btn btn-lg" value="Submit" onclick="myFunction1()">
+
                     </form>
                 </div>
                 <div class="panel panel-default panel-transparent col-lg-12">
@@ -84,20 +113,10 @@
                         <table class="col-sm-12">
                             <thead id="weatherTime">
                                 <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody id="weatherIcons">
                                 <tr id="hourlyForecast">
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -125,7 +144,6 @@
                         <tbody id="eventResults">
                             <tr>
                                 <td id="addRow"></td>
-                                <td id="addRow"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -134,17 +152,19 @@
 
         </div>
         <div class="panel panel-default panel-transparent col-lg-12">
-            <div class="container" >
-               <p data-toggle="popover"><p  id="popup"></p></p>
-               <div class="media">
-                <div class="media-left">
-                  <img src="img_avatar1.png" class="media-object" style="width:60px">
+            <div class="container">
+                <p data-toggle="popover">
+                    <p id="popup"></p>
+                </p>
+                <div class="media">
+                    <div class="media-left">
+                        <img src="img_avatar1.png" class="media-object" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"></h4>
+
+                    </div>
                 </div>
-                <div class="media-body">
-                  <h4 class="media-heading"></h4>
-                  
-                </div>
-              </div>
             </div>
         </div>
     </div>
